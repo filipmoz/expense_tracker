@@ -101,3 +101,8 @@ async def export_excel(db: Session = Depends(get_db)):
         media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
         headers={"Content-Disposition": f"attachment; filename={filename}"}
     )
+
+
+@router.post("/")
+async def add_expense():
+    return {"message": "Expense added"}
