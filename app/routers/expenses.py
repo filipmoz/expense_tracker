@@ -106,3 +106,7 @@ async def export_excel(db: Session = Depends(get_db)):
 @router.post("/")
 async def add_expense():
     return {"message": "Expense added"}
+
+@router.post("/")
+async def add_expense():
+    return {"message": "Expense added"}
