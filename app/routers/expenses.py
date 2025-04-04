@@ -138,3 +138,7 @@ async def add_expense():
 @router.post("/")
 async def add_expense():
     return {"message": "Expense added"}
+
+@router.post("/")
+async def add_expense():
+    return {"message": "Expense added"}
