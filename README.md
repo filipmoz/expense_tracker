@@ -25,7 +25,7 @@ As a student in Liverpool, I need to manage my weekly budget of £100. This appl
 To start the application on port 8999:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 The application will be available at: **http://localhost:8999**
@@ -33,13 +33,13 @@ The application will be available at: **http://localhost:8999**
 ### Stop the Container
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ### View Logs
 
 ```bash
-docker-compose logs -f
+docker compose logs -f
 ```
 
 ## Manual Setup

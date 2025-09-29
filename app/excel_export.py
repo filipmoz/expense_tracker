@@ -47,7 +47,7 @@ def export_expenses_to_excel(db: Session) -> BytesIO:
     })
     
     date_format = workbook.add_format({'num_format': 'yyyy-mm-dd hh:mm:ss'})
-    currency_format = workbook.add_format({'num_format': '$#,##0.00'})
+    currency_format = workbook.add_format({'num_format': '£#,##0.00'})
     
     # Headers
     headers = ['ID', 'Date', 'Category', 'Description', 'Amount']
@@ -154,7 +154,7 @@ def export_expenses_to_excel(db: Session) -> BytesIO:
     })
     chart3.set_title({'name': 'Average Expense by Category'})
     chart3.set_x_axis({'name': 'Category'})
-    chart3.set_y_axis({'name': 'Amount ($)'})
+    chart3.set_y_axis({'name': 'Amount (£)'})
     chart3.set_size({'width': 480, 'height': 300})
     chart_sheet.insert_chart('B38', chart3)
     
